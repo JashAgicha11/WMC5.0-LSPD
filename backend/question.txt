@@ -1,0 +1,23 @@
+Arrested! but how? How did they find me?
+
+The Los Santos Police Department (LSPD) needs your help to catch the most wanted criminals in the city.
+Create a website for the Los Santos Police Department (LSPD) which can speed up the process of catching the criminals.
+
+Features We Expect:
+
+Authentication: Implement Login / Signup - Role based: Admin and User
+Most Wanted List: Showcase photos and details of Los Santos' most wanted criminals,including descriptions, aliases, and any relevant information for public identification.(it is visible to public, no login required)
+Submit a Tip: Create a user-friendly interface for submitting anonymous crime tips.
+View News & Announcements: Logged in users can view the news and announcements posted by the department
+Likes: Users can like the news & announcements
+Careers at LSPD: Provide information about career opportunities with the LSPD, including eligibility requirements, application procedures, and the benefits of joining the force.
+LSPD News & Announcements (Admin Feature): Publish press releases, community outreach details, and department news to keep citizens informed.
+Update Most Wanted List (Admin Feature): Admin can update the most wanted list
+View the Tips (Admin Feature): All submitted tips are visible to the only the admin
+Update Job Postings (Admin Feature): Post Jobs in the Careers at LSPD section
+
+Bonus Challenge:
+
+Comments: Users can comment on the news or announcements
+Admin Update/Delete: Admin will have the functionality to Delete or Update the posted items (i.e. News & Announcements, Most Wanted List, Jobs)
+Face recognition: Users can upload an image of a suspect, the site will match the image against the most wanted list	

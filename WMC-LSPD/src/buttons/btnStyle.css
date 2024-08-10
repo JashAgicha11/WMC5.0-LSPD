@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Pricedown';
+  src: url("/Frontend/src/assets/Text/pricedown.ttf");
+}
+
+
+   .create {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+  }
+
+
+
+
+  .create::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 25% 100%;
+    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+    animation-play-state: paused;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+  }
+  
+  .create:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+  }
+  
+  @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+    to {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .create span {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    /* font-size: 0.5rem;  */
+    background: #282F37;
+    border-radius: 2rem;
+    /* height: 100%; */
+    /* width:100% */
+  }
+
+  .Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
+    transition-duration: 0.3s;
+  }
+  
+  .svg {
+    width: 12px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: black;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover {
+    color: transparent;
+  }
+  
+  .Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:active {
+    transform: translate(3px, 3px);
+    transition-duration: 0.3s;
+  }
+  
+
+  .button {
+  position: relative;
+  width: 4em;
+  height: 4em;
+  border: none;
+  background: rgba(180, 83, 107, 0.11);
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+
+.X {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.Y {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: black;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  top: -70%;
+  left: 50%;
+  width: 3em;
+  height: 1.7em;
+  font-size: 12px;
+  background-color: rgb(19, 22, 24);
+  color: black;
+  border: none;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.button:hover {
+  background-color: rgb(211, 21, 21);
+}
+
+.button:active {
+  background-color: rgb(130, 0, 0);
+}
+
+.button:hover > .close {
+  animation: close 0.2s forwards 0.25s;
+}
+
+@keyframes close {
+  100% {
+    opacity: 1;
+  }
+}

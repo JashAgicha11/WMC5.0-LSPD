@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=poppins@400&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=trench-slab@500&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=technor@300&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=technor@300&f[]=sentient@400&f[]=rajdhani@700&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap");
+
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base{
+    @font-face {
+        font-family: 'Pricedown';
+        src: url("./assets/Text/pricedown.ttf");
+      }
+    }
+
+
+    ::-webkit-scrollbar{
+      width:4px
+    }
+    ::-webkit-scrollbar:horizontal{
+      height: 8px;
+      /* width: 20px; */
+    }
+    ::-webkit-scrollbar-thumb{
+      @apply bg-sky-400 rounded-xl;
+    }
+    
+    .task > ::-webkit-scrollbar-thumb{
+      @apply bg-sky-300 rounded-xl;
+    }
+
+    @layer utilities {
+      .bg-gta-blue {
+        background-color: #233d4d;
+      }
+    
+      .bg-gta-red {
+        background-color: #ce2029;
+      }
+    
+      .bg-gta-green {
+        background-color: #68c54b;
+      }
+    
+      .text-gta-yellow {
+        color: #f2d049;
+      }
+    
+      .border-gta-yellow {
+        border-color: #f2d049;
+      }
+    }
